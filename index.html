@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" manifest="myCache.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Do you need a website?,discover what I have to offer when it comes to web design">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <title>Vraz Web Design | Professional Front-end Websites For You</title>
+
+</head>
+<body>
+    <!--header-->
+    <header>
+        <div class="wrapper">
+            <a href="https://vrazwebdesign.000webhostapp.com" class="logo">
+                <img src="img/logo.png" alt="Vraz Web Design home">
+            </a>
+            <nav aria-label="Main Navigation">
+                <div class="burger-nav">
+                    <input type="checkbox" id="menu">
+                    <label for="menu" class="fa fa-bars" aria-label="open/close the navigation menu"></label>
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact" class="contact">Contact</a></li>
+                        <li class="has-submenu">
+                            <a aria-haspopup="true" aria-expanded="false" href="#">Language<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul>
+                                <li><a href="index.html">English</a></li>
+                                <li><a href="spanish.html">Español</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--home section-->
+    <section id="home" class="section">
+        <div class="dark-layer">
+            <div class="wrapper">
+            <h1>Professional web design</h1>
+            <p>is what I do</p></div>
+            </div>
+            <a href="#main" class="fa fa-angle-down" aria-label="skipt to main content"></a>
+        </div>
+    </section>
+    <!--about section-->
+    <main id="main">
+    <section id="about" class="section wrapper" itemscope itemtype="http://schema.org/Person">
+        
+        <img src="img/io.png" alt="A photo of me" itemprop="image">
+        <article>
+            <h2>About me</h2>
+            <p>My name is <span itemprop="name">Ciro Villafraz</span>. Passionate about technology and coding,I am a self-taught<span itemprop="jobTitle">web designer</span>from<span itemprop="nationality">Venezuela</span>who likes
+            challenges. I can either turn a previous design that you have into an actual website or make a website from scratch.In addition,I
+            understand that time is money,so I will make sure to meet deadlines.
+            </p>
+            <p>In short,web design is what happens when you hire me.</p>
+        </article>  
+    </section>
+ 
+    <!--services section-->
+    <section id="services" class="section">
+        <h2>Services</h2>
+        <div class="f-container wrapper">
+        <div class="service">
+            <img src="img/psd.png" alt="">
+            <h3>PSD to HTML/CSS</h3>
+            <p>I can convert psd web templates into websites using html and css (and javascript if needed). I can also make the psd template myself.<br> Note:for the
+            purpose of responsiveness,the psd to html convertion will not be pixel perfect</p>
+        </div>
+        <div class="service">
+            <img src="img/resp.png" class="second" alt="">
+            <h3>Responsive Web Design</h3>
+            <p>In this era,it is essential that your website can be used on any device.With that in mind,I will make sure that your website
+            look great and be usable,no matter the screen size!</p>
+        </div>
+        <div class="service">
+            <img src="img/bilingual.png" alt="">
+            <h3>Bilingual Web Design</h3>
+            <p>As a native spanish speaker,I can make bilinual english-spanish websites. You will not have to hire a translator!</p>     
+        </div>
+        </div>
+       
+    </section>
+
+    <!--portfolio section-->
+    <section id="portfolio" class="section wrapper">
+        <h2>Portfolio</h2>
+        <div class="work">
+        <figure itemscope itemtype="http://schema.org/ImageObject">
+            <div>
+                <button class="fa fa-angle-left" aria-label="previous"></button>
+                <img src="img/1random.jpg" aria-labelledby="figc" itemprop="thumbnail">
+                <button class="fa fa-angle-right" aria-label="next"></button>
+            </div>
+            <figcaption id="figc" itemprop="caption">-A random psd template to html/css</figcaption>
+        </figure>
+        <ul class="slidenav">
+            <li>
+                <button class="current" data-slide="0">1</button>
+            </li>
+            <li>
+                <button data-slide="1">2</button>
+            </li>
+            <li>
+                <button data-slide="2">3</button>
+            </li>
+        </ul>
+        </div>
+        <a href="https://codepen.io/cvillafraz/#" target="_blank" class="more">See more in my codepen!</a>
+    </section>
+    </main>
+    <!--contact section-->
+    <footer id="contact" class="section">
+        <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+        <h2>Contact info</h2>
+        <p itemprop="email">ciro1200@gmail.com</p>
+        <a href="https://twitter.com/Vraz_Web_Design?lang=es" class="fa fa-twitter" aria-label="twitter" itemprop="url"></a>
+        <a href="https://www.linkedin.com/in/ciro-villafraz/?locale=en_US" class="fa fa-linkedin" aria-label="linkedin" itemprop="url"></a>
+        <a href="https://github.com/cvillafraz" class="fa fa-github" aria-label="github" itemprop="url"></a>
+        <hr>
+        <p>©Vraz Web Design 2018</p>
+        </div>
+    </footer>
+    <!--js-->
+<script src="js/app.js"></script>
+</body>
+</html>

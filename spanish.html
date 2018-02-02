@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es" manifest="myCache.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="¿Necesitas un sitio web?,descubre lo que tengo que ofrecer cuando se trata de diseño web!">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <title>Vraz Web Design | Diseño Web Profesional Para tí</title>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div class="wrapper">
+            <a href="https://vrazwebdesign.000webhostapp.com" class="logo">
+                <img src="img/logo.png" alt="Vraz Web Design inicio">
+            </a>
+            <nav aria-label="Navegación principal">
+                <div class="burger-nav">
+                    <input type="checkbox" id="menu">
+                    <label for="menu" class="fa fa-bars" aria-label="abre el menú de navegación"></label>
+                    <ul>
+                        <li>
+                            <a href="#home" class="active">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#about">Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="#services">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portafolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="contact">Contacto</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a aria-haspopup="true" aria-expanded="false" href="#">Idioma
+                                <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="index.html">English</a>
+                                </li>
+                                <li>
+                                    <a href="spanish.html">Español</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--home section-->
+<section id="home" class="section">
+    <div class="dark-layer">
+        <div class="wrapper">
+            <h1>Professional web design</h1>
+            <p>is what I do</p>
+        </div>
+    </div>
+    <a href="#main" class="fa fa-angle-down" aria-label="ir al contenido principal"></a>
+    </div>
+</section>
+    <!--about section-->
+    <main>
+        <section id="about" class="section wrapper" itemscope itemtype="http://schema.org/Person">
+            <img src="img/io.png" alt="Una foto mía" itemprop="image">
+            <article>
+                <h2>Sobre mí</h2>
+                <p>Mi nombre es <span itemprop="name">Ciro Villafraz</span>.Apasionado por la tecnología,soy un <span itemprop="jobTitle">diseñador web</span> autodidacta de <span itemprop="nationality">Venezuela</span> a quien le gustan los desafíos. Puedo convertir algún diseño que tengas previamente en un sitio web real,o hacer el sitio web desde 0. Además,entiendo que el tiempo es oro,por lo que me aseguraré de cumplir con fechas límite.
+                </p>
+                <p>En resumen,diseño web es lo que sucede cuando me contratas.</p>
+            </article>
+        </section>
+
+        <!--services section-->
+        <section id="services" class="section">
+            <h2>Servicios</h2>
+            <div class="f-container wrapper">
+                <div class="service">
+                    <img src="img/psd.png" alt="">
+                    <h3>PSD a HTML/CSS</h3>
+                    <p>Puedo convertir diseños web de photoshop a sitios web usando html y css (y javascript si es necesario). También puedo hacer el diseño web de photoshop yo mismo <br>Nota:por el propósito de la adaptabilidad del sitio,la conversión psd-html no será precisa</p>
+                </div>
+                <div class="service">
+                    <img src="img/resp.png" class="second" alt="">
+                    <h3>Diseño Web Responsive</h3>
+                    <p>En esta era,es esencial que tu sitio web pueda ser usado en cualquier dispositivo.Con eso en mente,¡me aseguraré de que tu sitio web se vea bien y sea usable sin importar el tamaño de pantalla! </p>
+                </div>
+                <div class="service">
+                    <img src="img/bilingual.png" alt="">
+                    <h3>Diseño Web Bilingüe</h3>
+                    <p>Siendo capáz de hablar inglés de manera fluída,puedo hacer sitios web bilingües inglés-español. ¡No tendrás que contratar a un traductor!</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!--portfolio section-->
+        <section id="portfolio" class="section wrapper">
+            <h2>Portafolio</h2>
+            <div class="work">
+                <figure itemscope itemtype="http://schema.org/ImageObject">
+                    <div>
+                    <button class="fa fa-angle-left" aria-label="previa"></button>
+                    <img src="img/1random.jpg" aria-labelledby="figc" itemprop="thumbnail">
+                    <button class="fa fa-angle-right" aria-label="siguiente"></button>
+                    </div>
+                    <figcaption id="figc" itemprop="caption">-Un diseño de photoshop random a HTML/CSS</figcaption>
+                </figure>
+                <ul class="slidenav">
+                    <li>
+                        <button class="current" data-slide="0">1</button>
+                    </li>
+                    <li>
+                        <button data-slide="1">2</button>
+                    </li>
+                    <li>
+                        <button data-slide="2">3</button>
+                    </li>
+                </ul>
+            </div>
+            <a href="https://codepen.io/cvillafraz/#" target="_blank" class="more">¡Mira mas en mi codepen!</a>
+        </section>
+    </main>
+    <!--contact section-->
+    <footer id="contact" class="section">
+        <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+            <h2>Información de contacto</h2>
+            <p>ciro1200@gmail.com</p>
+            <a href="https://twitter.com/Vraz_Web_Design" class="fa fa-twitter" aria-label="twitter"></a>
+            <a href="https://www.linkedin.com/in/ciro-villafraz/?locale=en_US" class="fa fa-linkedin" aria-label="linkedin"></a>
+            <a href="https://github.com/cvillafraz" class="fa fa-github" aria-label="github"></a>
+            <hr>
+            <p>©Vraz Web Design 2018</p>
+        </div>
+    </footer>
+    <!--js-->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
