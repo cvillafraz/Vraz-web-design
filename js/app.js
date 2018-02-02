@@ -3,7 +3,6 @@
     const header=document.querySelector('header');
     let psdHeight = document.querySelector('.service:first-of-type img');
     let second = document.querySelector('.second');
-    let last = document.querySelector('.service:last-of-type img');
     const section = document.querySelectorAll(".section");
     const left=document.querySelector('.fa-angle-left');
     const right=document.querySelector('.fa-angle-right');
@@ -40,8 +39,10 @@
     //functions
     function changeMargin(){
         second.style.marginBottom=psdHeight.offsetHeight-second.offsetHeight+'px';
-        last.style.marginBottom=psdHeight.offsetHeight-last.offsetHeight+'px';
     } 
+    if (window.innerWidth >= 768) {
+        changeMargin();
+    }
     //below taken from http://www.howtocreate.co.uk/tutorials/javascript/browserwindow
     function getScrollXY() {
         var scrOfX = 0, scrOfY = 0;
@@ -183,9 +184,7 @@
     });
    
     //function executions when page loads
-    if (window.innerWidth >= 768) {
-        changeMargin();
-    }
+   
     scrollSpy();
     //function executions when resizing
     window.addEventListener('resize',()=>{
