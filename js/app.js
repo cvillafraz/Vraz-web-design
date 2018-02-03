@@ -40,9 +40,7 @@
     function changeMargin(){
         second.style.marginBottom=psdHeight.offsetHeight-second.offsetHeight+'px';
     } 
-    if (window.innerWidth >= 768) {
-        changeMargin();
-    }
+   
     //below taken from http://www.howtocreate.co.uk/tutorials/javascript/browserwindow
     function getScrollXY() {
         var scrOfX = 0, scrOfY = 0;
@@ -184,8 +182,13 @@
     });
    
     //function executions when page loads
-   
+   window.onload=e=>{
     scrollSpy();
+       if (window.innerWidth >= 768) {
+           changeMargin();
+       }
+   }
+    
     //function executions when resizing
     window.addEventListener('resize',()=>{
     
