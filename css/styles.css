@@ -279,7 +279,7 @@ header nav ul li a:hover,.has-submenu a:active{
 #contact{
     background: #be3144;
     text-align: center;
-    color: #d3d6db;
+    color: #f2f2f2;
 }
 #contact>.wrapper>*{
     padding: .7rem 0;
@@ -353,6 +353,7 @@ header nav ul li a:hover,.has-submenu a:active{
     }
     header nav ul li a{
         font-weight: normal;
+        color:#f2f2f2;
     }
   
     .burger-nav input,.burger-nav label{
