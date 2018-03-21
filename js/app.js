@@ -196,7 +196,6 @@
             changeMargin();
         } else {
             second.style.marginBottom = 'initial';
-            last.style.marginBottom = 'initial';
         }
        
         scrollSpy();
