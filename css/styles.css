@@ -1,4 +1,5 @@
 /*core styles*/
+@import url('https://fonts.googleapis.com/css?family=Cinzel:900|Emblema+One');
 *,*::before,*::after{margin: 0;padding: 0;box-sizing: border-box;}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,6 +43,10 @@ header>.wrapper{
 .logo{
     display: block;
     text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color:#d3d6db;
 }
 nav{background:#303841;}
 
@@ -142,13 +147,22 @@ header nav ul li a:hover,.has-submenu a:active{
     padding: .7rem;
 }
 /*about section*/
+#about{
+    background: #be3144;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
 #about img{
     max-width: 100%;
     display: block;
-    margin:1.2rem auto 0;
+    margin:1.5rem auto 0;
 }
 #about article{
     text-align: left;
+    background: #3a4750;
+    color:#d3d6db;
+    padding: 1.2rem;
+    border-radius: 0 0 10px 10px
 }
 #about h2{
     margin-bottom: 1rem;
@@ -252,15 +266,9 @@ header nav ul li a:hover,.has-submenu a:active{
 .slidenav button:hover,.slidenav button:active{
     border-style: inset;
 }
-.slidenav button:focus{
-    box-shadow: 0px 0px 8px 1.5px #303841;
-}
 .slidenav .current{
     background: #3a4750;
     color: #d3d6db;
-}
-#portfolio .work figcaption{
-    text-align: left;
 }
 #portfolio>a{
     display: inline-block;
@@ -308,6 +316,12 @@ header nav ul li a:hover,.has-submenu a:active{
 #contact>.wrapper .fa-github{
     color:#000;
 }
+#contact p:last-child{
+    background: #303841;
+    color: #d3d6db;
+    padding: 1rem;
+    font-weight: bold;
+}
 /*media query*/
 @media screen and (min-width:768px){
     /*header*/
@@ -322,7 +336,9 @@ header nav ul li a:hover,.has-submenu a:active{
         width: 80%;*/
         max-width: 100%;
     }
-    
+    .logo{
+        font-size: 4rem;
+    }
     .has-submenu{
         position: relative;
     }
@@ -380,6 +396,8 @@ header nav ul li a:hover,.has-submenu a:active{
         justify-content: space-around;
         align-items: center;
         padding: 1rem 0;
+        margin:0 auto;
+        border-radius: 0;
     }
     #about img{
         margin:1.2rem 0;
@@ -387,6 +405,7 @@ header nav ul li a:hover,.has-submenu a:active{
     
     #about article{
         flex-basis: 60%;
+        border-radius: 10px;
     }
     /*services*/
     .f-container{
@@ -405,8 +424,5 @@ header nav ul li a:hover,.has-submenu a:active{
     /*portfolio*/
     .work figure{
         margin-bottom:initial;
-    }
-    .work figure figcaption{
-        font-size: 1.2rem;
     }
 }

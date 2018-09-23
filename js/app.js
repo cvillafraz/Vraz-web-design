@@ -7,38 +7,24 @@
     const left=document.querySelector('.fa-angle-left');
     const right=document.querySelector('.fa-angle-right');
     let picture=document.querySelector('.work figure img');
-    let figcaption=document.querySelector('#figc');
     let current=0;
     let sections = {};
     let i = 0;
     const slideBtn=document.querySelectorAll('.slidenav li button');
     let imgs=[
         {
-            src: "img/1random.jpg",figc
+            src: "img/gameoflife.png"
         },
         {
-            src: "img/form.png",figc
+            src: "img/recipe-box.png"
         },
         {
-            src: "img/random.png",figc
+            src: "img/form.png"
         }
     ]
-    //check the language to set the figcaption
-    switch (document.querySelector('html').getAttribute('lang')) {
-        case 'en':
-            imgs[0].figc = "-A random psd template to html/css";
-            imgs[1].figc = "-Traversy Media form challenge";
-            imgs[2].figc = "-Random quote machine";
-            break;
-        case 'es':
-            imgs[0].figc = "-Un diseño de photoshop random a HTML/CSS";
-            imgs[1].figc ="-Desafío de formulario de Traversy Media";
-            imgs[2].figc ="-Máquina de citas al azar";
-            break;  
-    }
     //functions
     function changeMargin(){
-        second.style.marginBottom=psdHeight.offsetHeight-second.offsetHeight+'px';
+        second.style.paddingBottom=psdHeight.offsetHeight-second.offsetHeight+'px';
     } 
    
     //below taken from http://www.howtocreate.co.uk/tutorials/javascript/browserwindow
@@ -115,7 +101,6 @@
     announceCurrent(1);
     function leftArrow(){
         picture.src = imgs[current-1].src;
-        figcaption.innerHTML=imgs[current-1].figc;
         current--
         document.querySelector('.current').classList.remove('current');
         slideBtn[current].classList.add('current');
@@ -123,7 +108,6 @@
     }
     function  rightArrow() {
         picture.src = imgs[current + 1].src;
-        figcaption.innerHTML = imgs[current + 1].figc;
         current++
         document.querySelector('.current').classList.remove('current');
         slideBtn[current].classList.add('current');
@@ -159,21 +143,18 @@
         btn.addEventListener('click',e=>{
             if(e.target==slideBtn[0]){
                 picture.src = imgs[0].src;
-                figcaption.innerHTML = imgs[0].figc;
                 document.querySelector('.current').classList.remove('current');
                 slideBtn[0].classList.add('current');
                 announceCurrent(1);
             }
             if (e.target==slideBtn[1]) {
                 picture.src = imgs[1].src;
-                figcaption.innerHTML = imgs[1].figc;
                 document.querySelector('.current').classList.remove('current');
                 slideBtn[1].classList.add('current');
                 announceCurrent(2);
             }
             if (e.target==slideBtn[2]) {
                 picture.src = imgs[2].src;
-                figcaption.innerHTML = imgs[2].figc;
                 document.querySelector('.current').classList.remove('current');
                 slideBtn[2].classList.add('current');
                 announceCurrent(3);
