@@ -304,16 +304,13 @@ header nav ul li a:hover,.has-submenu a:active{
     font-size: 2rem;
     margin: 0 .6rem;
 }
-.fa-twitter{
-    color:lightskyblue;
-}
 #contact>.wrapper .fa-linkedin{
     color:#fff;
     background: #1686b0;
     padding: .2rem .3rem;
     border-radius: 5px;
 }
-#contact>.wrapper .fa-github{
+#contact>.wrapper .fa-github, #contact>.wrapper .fa-stack-overflow{
     color:#000;
 }
 #contact p:last-child{
